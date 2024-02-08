@@ -1,0 +1,148 @@
+
+
+
+:root {
+    --primaryFont: 'Josefin Sans', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+    --primaryColor: #FF6F61;
+    --secondaryColor: #11161E;
+    --txtColor: #1D1D1D;
+    --paragraphColor: #444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.container {
+    width: 1320px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* *COMMON BUTTONS CSS STARTS HERE */
+
+.commonBtn {
+    color: white;
+    text-align: center;
+    font-family: var(--primaryFont);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    background-color: var(--primaryColor);
+    padding: 13px 25.09px;
+    transition: .25s;
+}
+
+.commonBtn  i {
+    padding-left: 5px;
+}
+
+/* *COMMON BUTTONS CSS ENDS HERE */
+
+
+
+/* *BEST SELLER PRODUCTS COMMON CSS STARTS */
+
+.commonImage {
+    position: relative;
+    
+}
+
+.commonProductCnt {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.commonProductCnt p {
+    color: var(--Paragraph-Color, #444);
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.commonProductCnt h4 {
+    color: var(--txtColor);
+    text-align: center;
+    font-family: var(--primaryFont);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.commonProductCnt i {
+    color: var(--primaryColor);
+}
+
+.commonLabel span {
+    color: white;
+    background-color: var(--primaryColor);
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 5px 9px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    transform: rotate(-90deg);
+    border-radius: 13px 0px 0 13px;
+}
+
+.commonOverlay {
+    position: absolute;
+    top: 23%;
+    right: 17px;
+    transform: translateX(-60px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.35s linear;
+}
+
+.bestImage:hover .commonOverlay {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.bestImage .commonOverlay li a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 10px;
+    color: #151A32;
+    background-color: #fff;
+}
+
+.bestImage .commonOverlay li:hover a {
+    color: white;
+    background-color: var(--primaryColor);
+}
+/* *BEST SELLER PRODUCTS COMMON CSS STARTS */
+
+/* *common css */
